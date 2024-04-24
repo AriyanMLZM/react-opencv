@@ -14,7 +14,7 @@ const Home = () => {
   }, [file])
 
   return (
-    <main className="h-screen bg-bgColor flex items-center flex-col pb-4">
+    <main className=" flex items-center flex-col pb-4">
       <Header />
       <Inputimg props={{ img, file, setFile }} />
       <Canvas props={{ img }} />
