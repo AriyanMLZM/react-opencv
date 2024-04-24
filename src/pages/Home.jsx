@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 
-import { Header, Inputimg } from '../components'
+import { Header, Inputimg, Canvas } from '../components'
 import { reader } from '../helpers'
 
 const Home = () => {
@@ -14,9 +14,10 @@ const Home = () => {
   }, [file])
 
   return (
-    <main className="h-screen w-screen bg-bgColor flex items-center flex-col">
+    <main className="h-screen bg-bgColor flex items-center flex-col pb-4">
       <Header />
       <Inputimg props={{ img, file, setFile }} />
+      <Canvas props={{ img }} />
     </main>
   )
 }

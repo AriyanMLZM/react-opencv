@@ -13,7 +13,7 @@ const Inputimg = ({ props }) => {
         }}
       />
       <div className="h-[80%] p-2 flex justify-center items-center text-white overflow-hidden">
-        {props.img && <img src={props.img} alt="No Image" />}
+        {props.img && <img id='img' src={props.img} alt="No Image" draggable={false} className='select-none' />}
         {!props.img && <p>No Image Selected</p>}
       </div>
     </section>
