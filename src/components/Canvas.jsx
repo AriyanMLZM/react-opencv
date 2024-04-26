@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 
-import { convertPixels } from '../helpers'
+import { convertPixels, imgDownloader } from '../helpers'
 import { Button2 } from '.'
 
 const Canvas = ({ props }) => {
@@ -49,7 +49,7 @@ const Canvas = ({ props }) => {
             className="rounded mt-5 select-none"
             draggable={false}
           />
-          <Button2 />
+          <Button2 func={() => imgDownloader(img)}/>
         </>
       )}
     </>

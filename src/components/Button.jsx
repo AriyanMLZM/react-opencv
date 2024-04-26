@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Button = ({func}) => {
+const Button = ({ func }) => {
   return (
     <button
       type="button"
