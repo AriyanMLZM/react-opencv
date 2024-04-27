@@ -6,6 +6,7 @@ const Inputimg = ({ props }) => {
       <input
         id="file-upload"
         type="file"
+        multiple={false}
         accept="image/*"
         className="w-[90%] h-[20%] pt-2 text-[13px] text-white file:hover:bg-primary file:bg-bgColor file:border-[2px] file:border-primary file:border-solid file:px-2 file:text-primary file:hover:text-bgColor file:rounded-full file:mr-2"
         onChange={(e) => {
