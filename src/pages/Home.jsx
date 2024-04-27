@@ -21,7 +21,7 @@ const Home = () => {
   }
 
   return (
-    <main className=" flex items-center flex-col pb-4">
+    <main className=" flex items-center flex-col pb-8">
       <Header />
       <Inputimg props={{ img, file, setFile }} />
       <Inputs props={{ setIsCut, isCut, setMed, med }} />

@@ -7,7 +7,7 @@ const Inputs = ({ props }) => {
         <p className="text-white mb-1 text-[18px]">Med: {props.med}</p>
         <input
           value={props.med}
-          className='slider w-[200px] accent-primary'
+          className='slider md:w-[200px] w-[150px] accent-primary'
           min={0}
           max={255}
           step={1}

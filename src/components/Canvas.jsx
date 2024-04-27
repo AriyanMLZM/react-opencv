@@ -41,16 +41,15 @@ const Canvas = ({ props }) => {
     <>
       <canvas className="border-2 hidden" ref={canvasRef}></canvas>
       {img && (
-        <>
+        <section className='flex flex-col mt-7 justify-center items-center p-6 border-2 rounded'>
           <img
             src={img}
-            width={'300px'}
             alt="no image"
-            className="rounded mt-5 select-none"
+            className="rounded md:w-[500px] w-[250px] select-none"
             draggable={false}
           />
           <Button2 func={() => imgDownloader(img)}/>
-        </>
+        </section>
       )}
     </>
   )
