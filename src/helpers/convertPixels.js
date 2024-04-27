@@ -1,6 +1,6 @@
-const convertPixels = (pixels, med) => {
+const convertPixels = (pixels, threshold) => {
   for (var i = 0, n = pixels.length; i < n; i += 4) {
-    if ((pixels[i] + pixels[i + 1] + pixels[i + 2]) / 3 <= med) {
+    if ((pixels[i] + pixels[i + 1] + pixels[i + 2]) / 3 <= threshold) {
       pixels[i] = 0
       pixels[i + 1] = 0
       pixels[i + 2] = 0

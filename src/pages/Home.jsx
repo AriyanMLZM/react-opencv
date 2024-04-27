@@ -6,7 +6,7 @@ import { reader } from '../helpers'
 const Home = () => {
   const [file, setFile] = useState(null)
   const [img, setImg] = useState(null)
-  const [med, setMed] = useState(127)
+  const [threshold, setThreshold] = useState(127)
   const [isCut, setIsCut] = useState(false)
   const [convert, setConvert] = useState(false)
 
@@ -24,9 +24,9 @@ const Home = () => {
     <main className=" flex items-center flex-col pb-8">
       <Header />
       <Inputimg props={{ img, file, setFile }} />
-      <Inputs props={{ setIsCut, isCut, setMed, med }} />
+      <Inputs props={{ setIsCut, isCut, setThreshold, threshold }} />
       <Button func={handleConvert} />
-      <Canvas props={{ img, isCut, med, convert }} />
+      <Canvas props={{ img, isCut, threshold, convert }} />
     </main>
   )
 }

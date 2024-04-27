@@ -30,7 +30,7 @@ const Canvas = ({ props }) => {
       )
       const pixels = imgd.data
 
-      convertPixels(pixels, props.med)
+      convertPixels(pixels, props.threshold)
 
       ctx.putImageData(imgd, 0, 0)
       setImg(canvasRef.current.toDataURL('image/jpeg'))
@@ -41,14 +41,14 @@ const Canvas = ({ props }) => {
     <>
       <canvas className="border-2 hidden" ref={canvasRef}></canvas>
       {img && (
-        <section className='flex flex-col mt-7 justify-center items-center p-6 border-2 rounded'>
+        <section className="flex flex-col mt-7 justify-center items-center p-6 border-2 rounded">
           <img
             src={img}
             alt="no image"
             className="rounded md:w-[500px] w-[250px] select-none"
             draggable={false}
           />
-          <Button2 func={() => imgDownloader(img)}/>
+          <Button2 func={() => imgDownloader(img)} />
         </section>
       )}
     </>
