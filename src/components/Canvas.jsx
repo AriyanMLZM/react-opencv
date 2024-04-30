@@ -28,6 +28,8 @@ const Canvas = ({ props }) => {
         let dst = new cv.Mat()
         cv.cvtColor(src, dst, cv.COLOR_RGBA2GRAY, 0)
         cv.imshow(canvasRef.current, dst)
+        src.delete()
+        dst.delete()
       }
 
       setImg(canvasRef.current.toDataURL('image/jpeg'))
@@ -36,7 +38,7 @@ const Canvas = ({ props }) => {
 
   return (
     <>
-      <canvas className="border-2 hidden" ref={canvasRef}></canvas>
+      <canvas className="hidden" ref={canvasRef}></canvas>
       {img && (
         <section className="flex flex-col mt-7 justify-center items-center p-6 border-2 rounded">
           <img
