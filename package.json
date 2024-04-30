@@ -1,6 +1,6 @@
 {
-  "homepage": "https://ariyanmlzm.github.io/react-image-processing",
-  "name": "image-process",
+  "homepage": "https://ariyanmlzm.github.io/react-opencv",
+  "name": "react-opencv",
   "private": true,
   "version": "0.0.0",
   "type": "module",
